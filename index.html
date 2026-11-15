@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moosa</title>
+  <style>
+    :root { --bg: #ffffff; --text: #1f2328; --muted: #57606a; --accent: #0969da; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; }
+    }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7; max-width: 700px; margin: 72px auto; padding: 0 24px;
+    }
+    header { display: flex; justify-content: flex-end; gap: 18px; font-size: 0.9rem; margin-bottom: 48px; }
+    header a { color: var(--muted); text-decoration: none; }
+    header a:hover { color: var(--text); }
+    h1 { font-size: 2.1rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 20px; }
+    .bio img {
+      float: right; width: 175px; height: 210px; object-fit: cover;
+      border-radius: 6px; margin: 4px 0 16px 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    p { margin-bottom: 16px; font-size: 0.98rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 20px; margin-top: 12px; }
+    li { margin-bottom: 6px; font-size: 0.96rem; }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid rgba(128,128,128,0.2); font-size: 0.9rem; display: flex; gap: 18px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#about">about</a>
+    <a href="#projects">projects</a>
+    <a href="#writing">writing</a>
+    <a href="cv.pdf">cv</a>
+  </header>
 
+  <main id="about">
+    <h1>Moosa</h1>
+    <div class="bio">
+      <img src="avatar.jpg" alt="Moosa" />
+      <p>
+        Hi! I am a Computer Science undergraduate in İzmir, Türkiye, and the founder of
+        <strong>S.A.F (South Asian Fitness)</strong>, where I build real-time computer vision
+        and AI systems using Python, FastAPI, and Next.js.
+      </p>
+      <p>
+        My background is grounded in algorithmic problem-solving, global mathematics competition
+        rankings, and end-to-end systems engineering—from multimodal vision pipelines to
+        zero-trust financial ledgers and retrieval-augmented generation (RAG) architectures[cite: 9].
+      </p>
+      <p>My current engineering and research work revolves around:</p>
+      <ul id="projects">
+        <li><strong>Multimodal Computer Vision</strong> &amp; spatial food-density estimation (S.A.F)[cite: 8, 9]</li>
+        <li><strong>Hybrid RAG &amp; Personal Knowledge Graphs</strong> using pgvector and Qdrant[cite: 9]</li>
+        <li><strong>Zero-Trust FinTech Architecture</strong> with atomic double-entry ledgers[cite: 9]</li>
+        <li><strong>Cloud-Native Infrastructure</strong> provisioned via Terraform on AWS[cite: 9]</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://github.com/Moosa-natiezen">github</a>
+    <a href="https://linkedin.com">linkedin</a>
+    <a href="mailto:you@example.com">email</a>
+    <a href="cv.pdf">cv</a>
+  </footer>
+</body>
+</html>
